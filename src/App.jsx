@@ -5,18 +5,29 @@ function App() {
    const [Lan, setLan] = useState(true)
   return ( 
    <>
-      <div className="p-5 text-white border-4 border-b-blue-500 shadow-lg shadow-blue-400 bg-gray-800 flex justify-around">
-         <h2>
-            My portofolio
-         </h2>
-
-         <div className=''>
-            <button className='m-2'>About me</button>
-            <button className='m-2'>Certificate</button>
-            <button className='m-2'>Cocial Media</button>
+      <div className='bg-black p-3 text-white flex justify-around '>
+         <h2>Portofolio</h2>
+         <div>
+            <a href="" className='m-2'>About-me</a><a href="" className='m-2'>skill</a><a href="" className='m-2'>certificate</a>
          </div>
-      </div> 
-   
+      </div>
+   <div className='bg-black p-40 '>
+      <div className='flex justify-evenly'>
+        <div className='mr-40 mt-20 text-white'>
+            <h1 className='text-4xl'>My dream is imposibble but my track is posible</h1>
+           <br />
+           <div className='flex'>
+            <a href="" className='text-gray-600 text-m hover:text-white'>Github</a> 
+            <p>--</p>
+            <a href="" className='text-pink-400 text-m hover:text-white'>Instagram</a>
+            <p>--</p>
+            <a href="" className='text-blue-600 text-m hover:text-white shadow-2xl shadow-white'>Facebook</a></div>
+            <div>--------------------------------------------------------------------------------</div>
+        </div>
+         <img src="https://i.pinimg.com/736x/94/09/a5/9409a5a8afb2052f5b6c55021ab3cb89.jpg" alt="" className='rounded-[50%] shadow-2xl shadow-amber-50' width="400px"/>
+        
+      </div>
+   </div>
    </>
    );
 }
