@@ -34,12 +34,19 @@ function App() {
 {/* about me */}
  <div className='p-40 bg-black block text-center font-[Fira-Code]'>
       <h1 className='text-white text-4xl'>Who i am?</h1>
-      <div className='m-20 flex'>
+      <div className='m-20 flex text-amber-50'>
          <img src="https://i.pinimg.com/736x/94/09/a5/9409a5a8afb2052f5b6c55021ab3cb89.jpg" alt="image" className='w-100 border-2xl border-amber-50 rounded-2xl shadow-2xl shadow-amber-50'/>
-         <div>
-            <p></p>
+
+         <div className='p-5 ml-30 border-4 border-white rounded-2xl'>
+            <p>
+               haii, my name is Pramudito E,N,S. i just a junior programmer on web or data.
+               Of course i like coding and read some book. why i like code? i just wanna upgrade my skill on data or tech for my future.
+               Now i on journey in back end and data science. fun fact, i like cat 🐱 and my vav song is best friend by Rex Orange Country and Tarot from .Feast
+            </p>
          </div>
+        
       </div>
+       <a href="" className='border-4 border-amber-50 w-[80%] text-center pr-80 pl-80 text-white pb-6 hover:shadow-2xl hover:shadow-amber-50'> Contact me</a>
  </div>
 
 <div className='p-0.5 bg-white  '></div>
