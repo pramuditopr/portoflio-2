@@ -39,14 +39,12 @@ function App() {
 
          <div className='p-5 ml-30 border-4 border-white rounded-2xl'>
             <p>
-               haii, my name is Pramudito E,N,S. i just a junior programmer on web or data.
-               Of course i like coding and read some book. why i like code? i just wanna upgrade my skill on data or tech for my future.
-               Now i on journey in back end and data science. fun fact, i like cat 🐱 and my vav song is best friend by Rex Orange Country and Tarot from .Feast
+               Hi, I'm Rio — a 7th-grade student passionate about programming. I specialize in web development using HTML, CSS, and JavaScript, and I'm currently exploring PHP and React. I'm also interested in data science and machine learning. With a curious mindset and a drive to keep improving, I aim to create creative and meaningful digital solutions.
             </p>
          </div>
         
       </div>
-       <a href="" className='border-4 border-amber-50 w-[80%] text-center pr-80 pl-80 text-white pb-6 hover:shadow-2xl hover:shadow-amber-50'> Contact me</a>
+       <a href="" className='border-4 border-amber-50 w-[80%] text-center pr-80 pl-80 text-white pb-6 hover:shadow-2xl hover:shadow-amber-50 rounded-2xl'> Contact me</a>
  </div>
 
 <div className='p-0.5 bg-white  '></div>
