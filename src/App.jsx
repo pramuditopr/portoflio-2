@@ -2,7 +2,23 @@ import './App.css'
 import { useState } from 'react';
 
 function App() {
-   const [Lan, setLan] = useState(true)
+
+   const Follow = [
+      {Image : [
+         "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzEkaAN0BJ2o3ri2IsQRKXVk6ejQQqz0GUg&s",
+         "https://static.vecteezy.com/system/resources/previews/023/986/561/non_2x/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png"
+      ]},
+      {Name : [
+         "Instagram",
+         "Github",
+         "Tiktok"
+
+      ]},
+      { Link : [
+
+      ]}
+   ]
   return ( 
    <>
    {/* header */}
@@ -44,7 +60,7 @@ function App() {
          </div>
         
       </div>
-       <a href="" className='border-4 border-amber-50 w-[80%] text-center pr-80 pl-80 text-white pb-6 hover:shadow-2xl hover:shadow-amber-50 rounded-2xl'> Contact me</a>
+       <a href="" className='border-4 border-green-500 w-[80%] text-center pr-80 pl-80 text-white pb-6 hover:shadow-2xl hover:shadow-green-500 rounded-2xl'> Contact me</a>
  </div>
 
 <div className='p-0.5 bg-white  '></div>
@@ -81,6 +97,21 @@ function App() {
           <div className='bg-amber-50 pb-10 p-0.5 ml-10'>
          
       </div>
+   </div>
+   <div className='bg-white p-0.5'>
+
+   </div>
+   <div className='p-40 bg-black text-center'>
+      <h1 className='text-white text-2xl font-[Fira-Code]'>
+         Follow Me
+      </h1>
+      {Follow.map((maps)=> (
+         <div className='p-10 border-4 border-amber-50 text-white m-5'>
+            <img src={maps.Image} alt="" />
+            <p>{maps.Name}</p>
+         </div>
+      ))}
+      
    </div>
    </>
    );
