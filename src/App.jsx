@@ -4,21 +4,26 @@ import { useState } from 'react';
 function App() {
 
    const Follow = [
-      {Image : [
-         "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
-         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzEkaAN0BJ2o3ri2IsQRKXVk6ejQQqz0GUg&s",
-         "https://static.vecteezy.com/system/resources/previews/023/986/561/non_2x/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png"
-      ]},
-      {Name : [
-         "Instagram",
-         "Github",
-         "Tiktok"
-
-      ]},
-      { Link : [
-
-      ]}
+      {
+         image : 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png',
+         name : 'Instagram',
+         link : ''
+      }
+      ,{
+         image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzEkaAN0BJ2o3ri2IsQRKXVk6ejQQqz0GUg&s',
+         name : 'Github',
+         link : ''
+      },{
+         image : 'https://static.vecteezy.com/system/resources/previews/023/986/561/non_2x/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png',
+         name : 'Tiktok',
+         link : ''
+      }
    ]
+   const quote = [   
+      // Small steps can create something big.
+      {qu : "Small"},{qu : "steps"},{qu : "can"},{qu : "create"},{qu : "something"},{qu : "big."}
+   ]
+
   return ( 
    <>
    {/* header */}
@@ -30,9 +35,20 @@ function App() {
       </div>
 {/* jumbotron */}
    <div className='bg-black p-40 font-[Fira_Code]'>
-      <div className='flex justify-evenly'>
+      <div className='flex justify-center'>
         <div className='mr-40 mt-20 text-white'>
-            <h1 className='text-4xl'>My dream is imposibble but my track is posible</h1>
+         <h1 className='flex space-x-5'>
+            <h1 className='animate-bounce delay-50 duration-50 text-3xl'>📝</h1>
+            <h1 className='animate-bounce delay-100 duration-100 text-3xl'>👨‍💻</h1>
+            <h1 className='animate-bounce delay-150 duration-150 text-3xl'>🚀</h1>
+            <h1 className='animate-bounce delay-200 duration-200 text-3xl'>🛠️</h1>
+            <h1 className='animate-bounce delay-250 duration-250 text-3xl'>👨‍💻</h1>
+            <h1 className='animate-bounce delay-300 duration-300 text-3xl'>📝</h1></h1>
+
+
+            <h2 className='text-4xl'>{quote.map((q) => (
+               <span className='mr-2 transition-shadow ease-in-out saturate-200 hover:shadow-2xl shadow-amber-50'>{q.qu}</span>
+            ))}</h2>
            <br />
            <div className='flex'>
             <a href="" className='text-gray-600 text-m hover:text-white hover:text-shadow-lg hover:text-shadow-white mr-2'>Github</a> 
@@ -42,8 +58,7 @@ function App() {
             <a href="" className='text-blue-600 text-m hover:text-white hover:text-shadow-lg hover:text-shadow-white ml-2'>Facebook</a></div>
             <div>--------------------------------------------------------------------------------</div>
         </div>
-         <img src="https://i.pinimg.com/736x/94/09/a5/9409a5a8afb2052f5b6c55021ab3cb89.jpg" alt="" className='rounded-[50%] shadow-2xl shadow-amber-50' width="400px"/>
-        
+
       </div>
    </div>
 <div className='p-0.5 bg-white '></div>
@@ -101,16 +116,23 @@ function App() {
    <div className='bg-white p-0.5'>
 
    </div>
-   <div className='p-40 bg-black text-center'>
-      <h1 className='text-white text-2xl font-[Fira-Code]'>
+   <div className='p-40 bg-black text-center block justify-center font-[Fira-Code]'>
+      <h1 className='text-white text-2xl '>
          Follow Me
       </h1>
+      <div className='flex m-10 mr-10 justify-evenly'>
       {Follow.map((maps)=> (
-         <div className='p-10 border-4 border-amber-50 text-white m-5'>
-            <img src={maps.Image} alt="" />
-            <p>{maps.Name}</p>
+         <div className='p-10 border-4 block border-amber-50 text-white m-5 justify-center rounded-2xl transition-shadow ease-in-out duration-300  hover:shadow-2xl shadow-amber-50'>
+            <img src={maps.image} alt="" width={70} className='m-5'/>
+            <div className='pt-0.5 bg-amber-50 pl-10 pr-10'>
+
+            </div>
+            <p className='m-5'>{maps.name}</p>
          </div>
       ))}
+      </div>
+
+
       
    </div>
    </>
