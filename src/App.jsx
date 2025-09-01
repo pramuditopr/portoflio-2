@@ -2,12 +2,13 @@ import './App.css'
 import { useState } from 'react';
 
 function App() {
+   const [img, setImg] = useState(false)
 
    const Follow = [
       {
          image : 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png',
          name : 'Instagram',
-         link : ''
+         link : 'https://www.instagram.com/prmdt.ens/'
       }
       ,{
          image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzEkaAN0BJ2o3ri2IsQRKXVk6ejQQqz0GUg&s',
@@ -16,7 +17,8 @@ function App() {
       },{
          image : 'https://static.vecteezy.com/system/resources/previews/023/986/561/non_2x/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png',
          name : 'Tiktok',
-         link : ''
+         link : 'https://www.tiktok.com/@rriooo25',
+         
       }
    ]
    const quote = [   
@@ -27,10 +29,10 @@ function App() {
   return ( 
    <>
    {/* header */}
-      <div className='bg-black p-3 text-white flex justify-around font-[Fira_Code]'>
+      <div className='bg-black p-3 text-white flex justify-around font-[Fira_Code] '>
          <h2>Portofolio</h2>
          <div>
-            <a href="" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>About-me</a><a href="" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>skill</a><a href="" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>certificate</a>
+            <a href="https://github.com/pramuditopr" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>About-me</a><a href="" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>skill</a><a href="" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>certificate</a>
          </div>
       </div>
 {/* jumbotron */}
@@ -51,9 +53,9 @@ function App() {
             ))}</h2>
            <br />
            <div className='flex'>
-            <a href="" className='text-gray-600 text-m hover:text-white hover:text-shadow-lg hover:text-shadow-white mr-2'>Github</a> 
+            <a href="https://github.com/pramuditopr" className='text-gray-600 text-m hover:text-white hover:text-shadow-lg hover:text-shadow-white mr-2'>Github</a> 
             |
-            <a href="" className='text-pink-400 text-m hover:text-white hover:text-shadow-lg hover:text-shadow-white mr-2 ml-2'>Instagram</a>
+            <a href="https://www.instagram.com/prmdt.ens/" className='text-pink-400 text-m hover:text-white hover:text-shadow-lg hover:text-shadow-white mr-2 ml-2'>Instagram</a>
             |
             <a href="" className='text-blue-600 text-m hover:text-white hover:text-shadow-lg hover:text-shadow-white ml-2'>Facebook</a></div>
             <div>--------------------------------------------------------------------------------</div>
@@ -122,18 +124,23 @@ function App() {
       </h1>
       <div className='flex m-10 mr-10 justify-evenly'>
       {Follow.map((maps)=> (
-         <div className='p-10 border-4 block border-amber-50 text-white m-5 justify-center rounded-2xl transition-shadow ease-in-out duration-300  hover:shadow-2xl shadow-amber-50'>
+         <div className='p-10 border-4 block border-amber-50 text-white m-5 justify-center rounded-2xl '>
             <img src={maps.image} alt="" width={70} className='m-5'/>
-            <div className='pt-0.5 bg-amber-50 pl-10 pr-10'>
+            <div className='pt-0.5 bg-amber-50 pl-10 pr-10 shadow-2xl shadow-amber-50'>
 
             </div>
             <p className='m-5'>{maps.name}</p>
+            <button onClick={() => window.location.href= maps.link} className='w-20 h-10 border-2 border-amber-50 rounded-2xl transition-shadow ease-in-out duration-300  hover:shadow-2xl shadow-amber-50'>
+               Follow
+            </button>
          </div>
       ))}
+
+
+
       </div>
 
-
-      
+        
    </div>
    </>
    );
