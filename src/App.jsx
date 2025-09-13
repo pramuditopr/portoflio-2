@@ -29,16 +29,21 @@ function App() {
   return ( 
    <>
    {/* header */}
-      <div className='bg-black p-3 text-white flex justify-around font-[Fira_Code] '>
-         <h2>Portofolio</h2>
-         <div>
-            <a href="https://github.com/pramuditopr" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>About-me</a><a href="" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>skill</a><a href="" className='m-2 hover:text-shadow-lg hover:text-shadow-white'>certificate</a>
-         </div>
+      <div className='bg-black p-3 text-white flex  font-[Fira_Code] z-10'>
+         <h2 className='float-left'>Portofolio</h2>
       </div>
 {/* jumbotron */}
+
    <div className='bg-black p-40 font-[Fira_Code]'>
-      <div className='flex justify-center'>
-        <div className='mr-40 mt-20 text-white'>
+
+      
+      
+      <div className='flex justify-center z-10'>
+
+        
+
+        <div className='mr-40 mt-20 text-white z-10 '>
+
          <h1 className='flex space-x-5'>
             <h1 className='animate-bounce delay-50 duration-50 text-3xl'>📝</h1>
             <h1 className='animate-bounce delay-100 duration-100 text-3xl'>👨‍💻</h1>
@@ -60,12 +65,20 @@ function App() {
             <a href="" className='text-blue-600 text-m hover:text-white hover:text-shadow-lg hover:text-shadow-white ml-2'>Facebook</a></div>
             <div>--------------------------------------------------------------------------------</div>
         </div>
-
+               <div className='bg-black z-10 h-60 border-4 border-amber-50 rounded-2xl  w-250' >
+                     
+                </div>
       </div>
+
+      
    </div>
+  
+   <div className='bg-black rounded--full rounded-t-full h-[100%]  p-1 z-0 absolute inset-0 shadow-2xl shadow-amber-50'></div>
+
 <div className='p-0.5 bg-white '></div>
 {/* about me */}
  <div className='p-40 bg-black block text-center font-[Fira-Code]'>
+            
       <h1 className='text-white text-4xl'>Who i am?</h1>
       <div className='m-20 flex text-amber-50'>
          <img src="https://i.pinimg.com/736x/94/09/a5/9409a5a8afb2052f5b6c55021ab3cb89.jpg" alt="image" className='w-100 border-2xl border-amber-50 rounded-2xl shadow-2xl shadow-amber-50'/>
@@ -78,6 +91,8 @@ function App() {
         
       </div>
        <a href="" className='border-4 border-green-500 w-[80%] text-center pr-80 pl-80 text-white pb-6 hover:shadow-2xl hover:shadow-green-500 rounded-2xl'> Contact me</a>
+
+            
  </div>
 
 <div className='p-0.5 bg-white  '></div>
